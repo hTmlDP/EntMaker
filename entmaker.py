@@ -72,7 +72,7 @@ for mapname in mapnames:
     line=""
     while char in (125, 123, 34):
         txt=line+txt
-        line=text[i]
+        line=text[i].decode('utf-8', 'ignore')
         char=ord(line[0]);
         i+=1
     txt="{\n"+txt
